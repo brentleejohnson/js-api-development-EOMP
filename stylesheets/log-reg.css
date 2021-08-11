@@ -132,7 +132,4 @@ input::placeholder {
 
 .register-form.active {
   display: flex;
-  .login-register-container {
-    height: 70%;
-  }
 }
