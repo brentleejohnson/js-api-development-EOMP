@@ -10,13 +10,35 @@
 // for login/register buttons
 let buttons = document.querySelectorAll(".tab");
 
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", change);
-}
+let reg_form = document.querySelector(".register-form");
+let login_form = document.querySelector(".login-form");
 
-function change(e) {
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].classList.remove("active");
-  }
-  e.currentTarget.classList.add("active");
-}
+let login = document.querySelector("#login");
+let register = document.querySelector("#register");
+
+// for (let i = 0; i < buttons.length; i++) {
+//   buttons[i].addEventListener("click", change);
+// }
+
+// function change(e) {
+//   for (let i = 0; i < buttons.length; i++) {
+//     buttons[i].classList.remove("active");
+//   }
+//   e.currentTarget.classList.add("active");
+// }
+
+login.addEventListener("click", () => {
+  register.classList.remove("active");
+  reg_form.classList.remove("active");
+
+  login.classList.add("active");
+  login_form.classList.add("active");
+});
+
+register.addEventListener("click", () => {
+  login.classList.remove("active");
+  login_form.classList.remove("active");
+
+  register.classList.add("active");
+  reg_form.classList.add("active");
+});
