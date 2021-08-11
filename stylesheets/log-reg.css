@@ -63,7 +63,6 @@ body {
 
 .login-form {
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -74,10 +73,10 @@ body {
   display: flex;
 }
 
-.login-info {
+.log-reg-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
   width: 100%;
@@ -85,11 +84,11 @@ body {
   font-size: 30px;
 }
 
-.login-label {
+.log-reg-label {
   display: none;
 }
 
-.login-info input {
+.log-reg-info input {
   font-size: 30px;
   background: none;
   border: none;
@@ -105,7 +104,7 @@ input::placeholder {
   opacity: 1;
 }
 
-.login-button {
+.log-reg-button {
   background: none;
   color: white;
   border: none;
@@ -115,7 +114,7 @@ input::placeholder {
   transition: 0.4s ease-out;
 }
 
-.login-button:hover {
+.log-reg-button:hover {
   opacity: 0.7;
   background: white;
   color: black;
@@ -133,4 +132,7 @@ input::placeholder {
 
 .register-form.active {
   display: flex;
+  .login-register-container {
+    height: 70%;
+  }
 }
