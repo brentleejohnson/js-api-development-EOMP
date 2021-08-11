@@ -87,6 +87,7 @@ body {
   font-weight: lighter;
   outline: none;
   color: white;
+  padding: 2%;
 }
 
 input::placeholder {
