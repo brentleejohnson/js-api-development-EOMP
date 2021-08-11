@@ -9,26 +9,47 @@
     <title>Flask EOMP</title>
   </head>
   <body>
+    <!-- CONTAINER -->
     <div class="container">
-      <div class="login"></div>
+      <!-- LOGIN -->
+      <div class="login">
+        <!-- LOGIN / REGISTER BUTTONS -->
+        <div class="login-register">
+          <button id="login">Login</button
+          ><button id="register">Register</button>
+        </div>
+        <!-- FORM -->
+        <form action="" class="login-form">
+          <!-- USERNAME -->
+          <div class="login-info">
+            <label for="name" class="login-label">Username</label>
+            <input
+              type="text"
+              name="name"
+              id="username"
+              class="login-input"
+              required
+              placeholder="Username"
+            />
+          </div>
+          <!-- PASSWORD -->
+          <div class="login-info">
+            <label for="password" class="login-label">Password</label>
+            <input
+              type="text"
+              password="password"
+              id="password"
+              class="login-input"
+              required
+              placeholder="Password"
+            />
+          </div>
+        </form>
+        <button class="login-button">Login</button>
+      </div>
+      <!-- REGISTER -->
       <div class="register"></div>
     </div>
-
-    <!-- <div id="login-page">
-      <img
-        class="background"
-        src="./images/login.jpg"
-        alt="Login Page Background Image"
-      />
-      <div class="gradient"></div>
-      <div class="login-container">
-        <img
-          class="login-img"
-          src="./images/login.jpg"
-          alt="Login Page Background Image"
-        />
-      </div>
-    </div> -->
     <!-- SCRIPTS -->
     <script src="./scripts/main.js"></script>
   </body>
