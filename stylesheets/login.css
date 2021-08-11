@@ -18,6 +18,34 @@ body {
   align-items: center;
 }
 
+.container button {
+  cursor: pointer;
+}
+
+/* ACTIVE CLASS */
+.tab {
+  background: white;
+  color: black;
+  opacity: 0.7;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.tab.active {
+  background: none;
+  color: white;
+}
+
+.content {
+  background: none;
+}
+
+.content.active {
+  background: white;
+}
+
 /* LOGIN */
 .login-register-container {
   background: rgba(0, 0, 0, 0.5);
@@ -39,22 +67,6 @@ body {
   flex-direction: row;
   width: 100%;
   height: 20%;
-}
-
-#login,
-#register {
-  background: none;
-  color: white;
-  border: none;
-  width: 100%;
-  height: 100%;
-  font-size: 20px;
-}
-
-#register {
-  opacity: 0.7;
-  background: white;
-  color: black;
 }
 
 .login-form {
