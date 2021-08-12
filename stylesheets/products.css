@@ -22,7 +22,7 @@ body {
   width: 100%;
   height: 100px;
   background: transparent;
-  position: absolute;
+  position: fixed;
 }
 
 .products-navbar h1 {
@@ -85,7 +85,7 @@ body {
 .blog {
   background: grey;
   width: 100%;
-  height: 600px;
+  height: 60%;
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -100,4 +100,13 @@ body {
 .blog p {
   width: 40%;
   text-align: center;
+}
+
+.blog-1 {
+}
+
+.blog-2 {
+}
+
+.blog-details {
 }
