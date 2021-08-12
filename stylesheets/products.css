@@ -6,9 +6,98 @@
 
 body {
   height: 100vh;
+  font-family: "Roboto Mono", monospace;
 }
 
 .products-container {
   width: 100%;
   height: 100%;
+}
+
+.products-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  position: absolute;
+}
+
+.products-navbar h1 {
+  color: white;
+  font-size: 50px;
+  margin-left: 1%;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.navbar-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+
+.navbar-buttons button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.navbar-buttons button:hover {
+  transform: scale(1.3);
+}
+
+.navbar-small-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70px;
+  margin-right: 1%;
+}
+
+.navbar-profile,
+.navbar-cart {
+  color: white;
+  font-size: 20px;
+}
+
+.landing-page {
+  background-image: url(../images/landing2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 70%;
+  min-height: 300px;
+}
+
+/* .landing-page h1 {
+  color: black;
+  text-shadow: 0 0 3px white;
+  font-size: 50px;
+} */
+
+.blog {
+  background: grey;
+  width: 100%;
+  height: 600px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog h1 {
+  margin-bottom: 1%;
+}
+
+.blog p {
+  width: 40%;
+  text-align: center;
 }
