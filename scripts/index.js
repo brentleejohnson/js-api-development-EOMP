@@ -25,14 +25,12 @@ register.addEventListener("click", () => {
 });
 
 // LOGIN
-let date = new Date();
-
-let logInButton = document.querySelector(".login");
+// let date = new Date();
 
 function loginF(username, password) {
   console.log(username);
   console.log(password);
-  fetch("https://secure-harbor-41796.herokuapp.com/auth", {
+  fetch("https://secure-harbor-41796.herokuapp.com/login/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -50,14 +48,20 @@ function loginF(username, password) {
         myStorage.setItem("jwt-token", data["access_token"]);
         myStorage.setItem("username", username);
         myStorage.setItem("password", password);
-        window.location.href = "/products.html";
+        window.location.href = "./products.html";
       }
     });
 }
 
 // REGISTER
-function registerF(name, email, username, password) {
+function registerF() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const username = document.getElementById("username2").value;
+  const password = document.getElementById("password2").value;
+
   console.log(name, email, username, password);
+
   fetch("https://secure-harbor-41796.herokuapp.com/registration/", {
     method: "POST",
     headers: {
@@ -73,5 +77,6 @@ function registerF(name, email, username, password) {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
+      console.log("You have succesfully registered");
     });
 }
