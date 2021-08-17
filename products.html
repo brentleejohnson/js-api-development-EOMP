@@ -43,46 +43,36 @@
           <div class="navbar-cart"><i class="fas fa-shopping-cart"></i></div>
         </div>
       </nav>
-      <!-- LANDING PAGE -->
-      <div class="landing-page">
-        <!-- <h1>Are you lacking furniture?</h1> -->
-      </div>
-      <!-- BLOG -->
-      <!-- <div class="blog">
-        <h1>Blog</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          soluta, iure quasi nostrum numquam et nisi nam eligendi, sapiente
-          expedita, voluptatem ipsam explicabo delectus similique fuga
-          quibusdam? Alias, repudiandae excepturi.
-        </p>
-      </div> -->
-      <!-- BLOG 1 -->
-      <!-- <div class="blog-1">
-        <div class="blog-details">
-          <h2>Our Top Product</h2>
-          <p>The quality of our products is customer satisfaction.</p>
-        </div>
-        <img src="./images/bestseller.jpg" alt="Best Seller" />
-      </div> -->
-      <!-- BLOG 2 -->
-      <!-- <div class="blog-2">
-        <div class="blog-details">
-          <h2>Buy More At Once</h2>
-          <p>Can't choose what to buy? Buy a <span>set</span>.</p>
-        </div>
-        <img src="./images/set.jpg" alt="Set" />
-      </div> -->
-      <!-- CONTAINER FOR FILTER BUTTONS & PRODUCTS -->
-      <div class="products-filter-container">
-        <!-- FILTER BUTTONS -->
-        <div class="filter-buttons">
-          <button>All</button>
-          <button>Sets</button>
-          <button>Living Room</button>
-        </div>
+      <!-- CONTAINER FOR PRODUCTS -->
+      <div class="products-container">
         <!-- PRODUCTS -->
-        <div class="products-container"></div>
+        <!-- <div class="products-container"></div> -->
+        <div class="productOuterContainer">
+          <h1>Your Products</h1>
+          <div class="innerContainer"></div>
+        </div>
+        <div class="modalContainer">
+          <div class="modal"></div>
+        </div>
+        <h1>Add Product</h1>
+        <form onsubmit="addProduct(); return false">
+          <input class="inputProductName" type="text" placeholder="Name" />
+          <input class="productCategory" type="text" placeholder="Category" />
+          <input
+            class="productDescription"
+            type="text"
+            placeholder="Description"
+          />
+          <input class="productPrice" type="number" placeholder="Price" />
+          <input
+            class="productImage"
+            type="file"
+            onchange="previewFile(document.querySelector('.addImg'));"
+          />
+          <img class="addImg" src="" height="200" alt="Image preview..." />
+
+          <button class="addButton">Submit</button>
+        </form>
       </div>
       <!-- FOOTER -->
       <footer class="products-footer"></footer>
